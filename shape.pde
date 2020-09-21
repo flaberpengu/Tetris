@@ -4,19 +4,40 @@
 class shape{
   String name;
   int pieceID;
-  singlePiece[] singlePieces = new singlePiece[4];
+  singlePiece[] singlePieces;
   boolean active; //True if falling, false if landed
   shape(String gName, int gPieceID){
     name = gName;
     pieceID = gPieceID;
     active = true;
     //Is this bit needed?
-    for (int i = 0; i < 4; i++){
-      singlePieces[i] = new singlePiece();
-    }
+    //for (int i = 0; i < 4; i++){
+    //  singlePieces[i] = new singlePiece[4];
+    //}
   }
-  void getSinglePieces(){
-    
+  singlePiece getSinglePieces(int pieceNum){
+    singlePiece returnPiece;
+    switch (pieceID){
+      case 0:
+        returnPiece = new singlePiece(3 + pieceNum, 0);
+        break;
+      case 1:
+        if (pieceNum == 0){
+          returnPiece = new singlePiece(4, 0);
+        }
+        else if (pieceNum == 1){
+          returnPiece = new singlePiece(5, 0);
+        }
+        else if (pieceNum == 2){
+          returnPiece = new singlePiece(5, 1);
+        }
+        else{
+          returnPiece = new singlePiece(4, 1);
+        }
+        break;
+      case 2:
+        
+  }
   void rotate(){
   }
 }

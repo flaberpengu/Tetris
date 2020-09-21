@@ -1,4 +1,5 @@
 //Each square is 50x50 - 10 columns, 14 rows
+//Make subclasses of shape, each with generate methods and rotation methods?
 
 shape[] shapes;
 

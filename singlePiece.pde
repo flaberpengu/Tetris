@@ -4,10 +4,10 @@ class singlePiece{
   int xPos;
   int yPos;
   int edgeLength;
-  singlePiece(){
+  singlePiece(int gxPos, int gyPos){
     edgeLength = 50;
-    xPos = 5;
-    yPos = 0;
+    xPos = gxPos;
+    yPos = gyPos;
   }
   void move(char direction){
     switch (direction){
