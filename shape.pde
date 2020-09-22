@@ -15,9 +15,9 @@ class shape{
     //  singlePieces[i] = new singlePiece[4];
     //}
   }
-  singlePiece getSinglePieces(int pieceNum){
-    singlePiece returnPiece;
-    switch (pieceID){
+  singlePiece[] getSinglePieces(){//int pieceNum){
+    singlePiece[] returnPieces  = new singlePiece[4];
+    /*switch (pieceID){
       case 0:
         returnPiece = new singlePiece(3 + pieceNum, 0);
         break;
@@ -36,7 +36,8 @@ class shape{
         }
         break;
       case 2:
-        
+        */
+        return returnPieces;
   }
   void rotate(){
   }
