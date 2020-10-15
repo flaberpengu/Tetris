@@ -10,6 +10,10 @@ class shape{
     name = gName;
     pieceID = gPieceID;
     active = true;
+    //Is this bit needed?
+    //for (int i = 0; i < 4; i++){
+    //  singlePieces[i] = new singlePiece[4];
+    //}
   }
   singlePiece getSinglePiece(){
     /*singlePiece returnPiece;
