@@ -10,13 +10,9 @@ class shape{
     name = gName;
     pieceID = gPieceID;
     active = true;
-    //Is this bit needed?
-    //for (int i = 0; i < 4; i++){
-    //  singlePieces[i] = new singlePiece[4];
-    //}
   }
-  singlePiece getSinglePieces(int pieceNum){
-    singlePiece returnPiece;
+  singlePiece getSinglePiece(){
+    /*singlePiece returnPiece;
     switch (pieceID){
       case 0:
         returnPiece = new singlePiece(3 + pieceNum, 0);
@@ -36,7 +32,9 @@ class shape{
         }
         break;
       case 2:
-        
+        */
+    singlePiece returnPiece = new singlePiece(0,0);
+    return returnPiece;
   }
   void rotate(){
   }
